@@ -4,7 +4,7 @@
 <br />
 <div align="center">
 
-<h2 align="center">Chemical Reaction Outcome Prediction (Thesis)</h2>
+<h2 align="center">Chemical Reaction Outcome Prediction</h2>
 
   <p align="center">
     Graph to Sequence Approach
@@ -45,7 +45,7 @@
 
 ## About The Project
 
-This is a DL based approach for reaction outcome prediction as part of my IITM MTech thesis. A Graph to Sequence based encoder-decoder approach is used where the encoder is a D-MPNN followed by transformer encoder and decoder is a Transformer based autoregressive Decoder. The input to the model is the molecualr graph of the molecule and output is a SMILES string. The implementation is derived from the official implementation of the paper title - ["Permutation invariant graph-to-sequence model for template-free retrosynthesis and reaction prediction" by [Tu and Coley (2022)]](https://github.com/coleygroup/Graph2SMILES).
+This is a DL based approach for predicting chemical reaction outcome as part of my IITM MTech thesis. A Graph to Sequence encoder-decoder based approach is used where the encoder is a D-MPNN followed by transformer encoder and decoder is a Transformer based autoregressive Decoder. The input to the model is the molecular graph of the molecule and output is a SMILES string. The implementation is derived from the official implementation of the paper - ["Permutation invariant graph-to-sequence model for template-free retrosynthesis and reaction prediction" by [Tu and Coley (2022)]](https://github.com/coleygroup/Graph2SMILES).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -94,7 +94,7 @@ The instructions that follow are confirmed to be working on an Ubuntu system.
 
 ### Training the model:
 
-1.  Prerequisite: <a href="#preparing-the-dataset-for-training">Preparing the dataset for training</a>:
+1.  Prerequisite: <a href="#preparing-the-dataset-for-training">Preparing the dataset for training</a>
 
 2. Modify DATASET: one of [USPTO_50k, USPTO_480k] in scripts/train_g2s.sh
 
@@ -137,12 +137,6 @@ The instructions that follow are confirmed to be working on an Ubuntu system.
     ├── predict.py                  <- Python file to generate predictions
 
 --------
-
-<!-- LICENSE -->
-
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
